@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>CGV KIOSK</title>
+		<!-- 임시 파비콘 -->
+		<link rel="icon" href="./favicon.png" />
+		<!-- 아이콘 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<!-- 리셋 CSS -->
+		<link rel="stylesheet" href="./CSS/reset.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="./CSS/kioskmain.css" />
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link rel="stylesheet" href="./CSS/index.css" />
+		<link rel="stylesheet" href="./CSS/payment.css" />
+	</head>
+
+	<body>
+		<div class="onePage">
+			<!-- 새로 추가한 메인 화면 -->
+			<div id="storeSelectPage" class="mainWrap">
+				<header class="headerLogo">
+					<img src="./img/cgvback.png" alt="" class="logoBackground" />
+					<img src="./img/logo.png" alt="" class="titleLogo" />
+					<p class="informationText"><span>포트폴리오</span> 용도로 제작된 페이지입니다</p>
+				</header>
+				<section class="selectionBtn">
+					<article id="newTicketPurchase" class="selectTicket">
+						<img src="./img/ticket.png" alt="" class="ticketImg" />
+						<p>티켓구매</p>
+					</article>
+					<article id="reservedTicketPrint" class="selectPrint">
+						<img src="./img/printer.png" alt="" class="printImg" />
+						<p>예매티켓출력</p>
+					</article>
+					<a href="test.html">
+						<article class="selectSnack">
+							<img src="./img/popcorn.png" alt="" class="SnackImg" />
+							<p>매점구매</p>
+						</article>
+					</a>
+				</section>
+				<section class="mainWrapFooter">
+					<img src="./img/03.png" alt="" class="" />
+				</section>
+			</div>
+			<!-- 새로 추가한 메인 화면 종료 -->
+
+			<!-- 현재 상영표 -->
+			<div id="currentScreeningsWindow" class="currentScreenings">
+				<header>
+					<h1 class="headerLogo">
+						<a class="homeBtn" href="javascript:void(0)"><i class="fa-solid fa-house-chimney"></i></a>
+						<img src="./img/logoRed.png" alt="logo" />
+						<a id="replyBtn" class="replyBtn"><i class="fa-solid fa-rotate-left"></i></a>
+					</h1>
+					<h2 class="headerTitle">현재 상영표</h2>
+				</header>
+				<main>
+					<!-- 현재상영표 -->
+					<section id="nowMovie" class="nowMovie">
+						<div class="mainContent bat">
+							<img src="./img/theBatman.jpg" alt="더 배트맨" />
+							<div id="movieInfo" class="movieInfo">
+								<h3 id="infoTitle" class="infoTitle">더 배트맨</h3>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">SCREENX 2D</p>
+										<p id="infoFloor" class="infoFloor">4관(SCREENX) 8층</p>
+									</div>
+									<div id="showTime" class="showTime lineGW">
+										<p id="timeBox" class="timeBox">14 : 10</p>
+										<p id="timeSeat" class="timeSeat">118석</p>
+										<p id="timeBox" class="timeBox">20 : 15</p>
+										<p id="timeBox" class="timeSeat">115석</p>
+										<p id="timeBox" class="timeBox">14 : 10</p>
+										<p id="timeSeat" class="timeSeat">118석</p>
+										<p id="timeBox" class="timeBox">20 : 15</p>
+										<p id="timeBox" class="timeSeat">115석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">2관[Laser] 6층</p>
+									</div>
+									<div id="showTime" class="showTime">
+										<p id="timeBox" class="timeBox">12 : 00</p>
+										<p id="timeSeat" class="timeSeat">114석</p>
+										<p id="timeBox" class="timeBox">18 : 15</p>
+										<p id="timeSeat" class="timeSeat">110석</p>
+										<p id="timeBox" class="timeBox">12 : 00</p>
+										<p id="timeSeat" class="timeSeat">114석</p>
+										<p id="timeBox" class="timeBox">18 : 15</p>
+										<p id="timeSeat" class="timeSeat">110석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">3관 8층</p>
+									</div>
+									<div id="showTime" class="showTime">
+										<p id="timeBox" class="timeBox">13 : 25</p>
+										<p id="timeSeat" class="timeSeat">161석</p>
+										<p id="timeBox" class="timeBox">19 : 50</p>
+										<p id="timeSeat" class="timeSeat">155석</p>
+										<p id="timeBox" class="timeBox">13 : 25</p>
+										<p id="timeSeat" class="timeSeat">161석</p>
+										<p id="timeBox" class="timeBox">19 : 50</p>
+										<p id="timeSeat" class="timeSeat">155석</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mainContent reben">
+							<img src="./img/levenement.jpg" alt="레벤느망" />
+							<div id="movieInfo" class="movieInfo">
+								<h3 id="infoTitle" class="infoTitle">레벤느망</h3>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">SCREENX 2D</p>
+										<p id="infoFloor" class="infoFloor">씨네앤포레</p>
+									</div>
+									<div id="showTime" class="showTime lineGW">
+										<p id="timeBox" class="timeBox">15 : 40</p>
+										<p id="timeSeat" class="timeSeat">34석</p>
+										<p id="timeBox" class="timeBox">22 : 10</p>
+										<p id="timeSeat" class="timeSeat">115석</p>
+										<p id="timeBox" class="timeBox">15 : 40</p>
+										<p id="timeSeat" class="timeSeat">34석</p>
+										<p id="timeBox" class="timeBox">22 : 10</p>
+										<p id="timeSeat" class="timeSeat">115석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">3관[Laser]</p>
+									</div>
+									<div id="showTime" class="showTime lineGW">
+										<p id="timeBox" class="timeBox">12 : 05</p>
+										<p id="timeSeat" class="timeSeat">204석</p>
+										<p id="timeBox" class="timeBox">16 : 59</p>
+										<p id="timeSeat" class="timeSeat">110석</p>
+										<p id="timeBox" class="timeBox">12 : 05</p>
+										<p id="timeSeat" class="timeSeat">204석</p>
+										<p id="timeBox" class="timeBox">16 : 59</p>
+										<p id="timeSeat" class="timeSeat">110석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">3관 8층</p>
+									</div>
+									<div id="showTime" class="showTime">
+										<p id="timeBox" class="timeBox">17 : 35</p>
+										<p id="timeSeat" class="timeSeat">136석</p>
+										<p id="timeBox" class="timeBox">20 : 00</p>
+										<p id="timeSeat" class="timeSeat">155석</p>
+										<p id="timeBox" class="timeBox">17 : 35</p>
+										<p id="timeSeat" class="timeSeat">136석</p>
+										<p id="timeBox" class="timeBox">20 : 00</p>
+										<p id="timeSeat" class="timeSeat">155석</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mainContent Math">
+							<img src="./img/mathMan.jpg" alt="이상한 나라의 수학자" />
+							<div id="movieInfo" class="movieInfo">
+								<h3 id="infoTitle" class="infoTitle">이상한 나라의 수학자</h3>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">SCREENX 2D</p>
+										<p id="infoFloor" class="infoFloor">씨네앤포레</p>
+									</div>
+									<div id="showTime" class="showTime lineGW">
+										<p id="timeBox" class="timeBox">14 : 10</p>
+										<p id="timeSeat" class="timeSeat">34석</p>
+										<p id="timeBox" class="timeBox">22 : 10</p>
+										<p id="timeSeat" class="timeSeat">32석</p>
+										<p id="timeBox" class="timeBox">14 : 10</p>
+										<p id="timeSeat" class="timeSeat">34석</p>
+										<p id="timeBox" class="timeBox">22 : 10</p>
+										<p id="timeSeat" class="timeSeat">32석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">2관[Laser] 6층</p>
+									</div>
+									<div id="showTime" class="showTime lineGW">
+										<p id="timeBox" class="timeBox">12 : 00</p>
+										<p id="timeSeat" class="timeSeat">204석</p>
+										<p id="timeBox" class="timeBox">16 : 55</p>
+										<p id="timeSeat" class="timeSeat">207석</p>
+										<p id="timeBox" class="timeBox">12 : 00</p>
+										<p id="timeSeat" class="timeSeat">204석</p>
+										<p id="timeBox" class="timeBox">16 : 55</p>
+										<p id="timeSeat" class="timeSeat">207석</p>
+									</div>
+								</div>
+								<!-- 상영관 정보 -->
+								<div id="infoTheater" class="infoTheater">
+									<div id="infoTheaterLocation" class="infoTheaterLocation">
+										<p id="infoLocation" class="infoLocation">2D</p>
+										<p id="infoFloor" class="infoFloor">3관 8층</p>
+									</div>
+									<div id="showTime" class="showTime">
+										<p id="timeBox" class="timeBox">13 : 25</p>
+										<p id="timeSeat" class="timeSeat">136석</p>
+										<p id="timeBox" class="timeBox">20 : 00</p>
+										<p id="timeSeat" class="timeSeat">154석</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="previousBtn" class="previousBtn"><i class="fas fa-chevron-left"></i></div>
+						<div id="afterBtn" class="afterBtn"><i class="fas fa-chevron-right"></i></div>
+					</section>
+				</main>
+			</div>
+			<!-- 좌석 선택 화면 -->
+			<div id="seatSelectionWindow" class="seatSelectionWindow">
+				<header>
+					<h1 class="headerLogo">
+						<a class="homeBtn" href="javascript:void(0)"><i class="fa-solid fa-house-chimney"></i></a>
+						<img src="./img/logoRed.png" alt="logo" />
+						<a id="replyBtn" class="replyBtn"><i class="fa-solid fa-rotate-left"></i></a>
+					</h1>
+					<h2 class="headerTitle">좌석 선택</h2>
+				</header>
+				<main>
+					<div id="mainLogin" class="mainLogin">
+						<!-- 좌석선택 화면 -->
+						<section id="seatSelection" class="seatSelection">
+							<!-- 결제 인원 (미사용)-->
+							<!-- <div id="paymentArea" class="paymentArea">
+          <div id="paymentPeople" class="paymentPeople">
+            <div id="peopleAdult" class="peopleAdult">
+              <p>성인</p>
+              <button id="minusBtn" class="minusBtn">-</button>
+              <input id="peopleAdultCount" type="number" value="0" disabled />
+              <button id="plusBtn" class="plusBtn">+</button>
+            </div>
+            <div id="peopleChildren" class="peopleChildren">
+              <p>어린이</p>
+              <button id="minusBtn" class="minusBtn">-</button>
+              <input id="peopleChildrenCount" type="number" value="0" disabled />
+              <button id="plusBtn" class="plusBtn">+</button>
+            </div>
+          </div>
+        </div> -->
+
+							<!-- 좌석 선택 -->
+							<div class="ticketingArea">
+								<div class="ticketingHistory">
+									<div class="ticketRankA ticketRank">일반</div>
+									<div id="ticketAdultCount" class="ticketRankANumber ticketNumber">0매</div>
+									<div class="ticketRankB ticketRank">청소년</div>
+									<div id="ticketChildCount" class="ticketRankBNumber ticketNumber">0매</div>
+									<div class="ticketRankC ticketRank">장애인</div>
+									<div id="ticketDisableCount" class="ticketRankCNumber ticketNumber">0매</div>
+									<div class="ticketRankD ticketRank">경로우대</div>
+									<div id="ticketSeniorCount" class="ticketRankDNumber ticketNumber">0매</div>
+								</div>
+								<div id="TicketingPrice" class="TicketingPrice"></div>
+							</div>
+
+							<div id="screenBox" class="screenBox">S C R E E N</div>
+							<div id="seatArea" class="seatArea"></div>
+							<div id="seatSelectCompleteButton" class="paymentBtn">선택완료</div>
+						</section>
+					</div>
+				</main>
+			</div>
+			<!-- 예매 티켓 조회 -->
+			<div id="advanceTicketInquiryWindow" class="advanceTicketInquiryWindow">
+				<header>
+					<h1 class="headerLogo">
+						<a class="homeBtn" href="javascript:void(0)"><i class="fa-solid fa-house-chimney"></i></a>
+						<img src="./img/logoRed.png" alt="logo" />
+						<a id="replyBtn" class="replyBtn"><i class="fa-solid fa-rotate-left"></i></a>
+					</h1>
+					<h2 class="headerTitle">예매티켓 조회</h2>
+				</header>
+				<main>
+					<!-- 예매티켓 조회 -->
+					<section id="ticketingTicketInquiry" class="ticketingTicketInquiry">
+						<div class="ticketingTicketInquiryTitleArea">
+							<p>예매번호 <span>8자리</span>를 눌러주세요</p>
+						</div>
+
+						<div id="inputReservationNumber" class="inputReservationNumber">
+							<input
+								id="inputReservationNumberWindow"
+								class="inputReservationNumberWindow"
+								type="text"
+								placeholder="0000-0000"
+								disabled
+							/>
+						</div>
+						<p class="testCord">테스트 번호<br>1111-1111</p>
+						<!-- 예매번호 누르는 키패드 -->
+						<div id="ticketingTicketBtn" class="ticketingTicketBtn">
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">1</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">2</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">3</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">4</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">5</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">6</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">7</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">8</div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">9</div>
+							<div id="ticketingTicketClearButton" class="ticketingTicketNumber"><i class="fas fa-redo-alt"></i></div>
+							<div id="ticketingTicketNumber" class="ticketingTicketNumber">0</div>
+							<div id="ticketingTicketBackspaceButton" class="ticketingTicketNumber">
+								<i class="fas fa-backspace"></i>
+							</div>
+						</div>
+						<div id="ticketingTicketInquiryBtn" class="ticketingTicketInquiryBtn">조회하기</div>
+					</section>
+				</main>
+			</div>
+			<!-- 예매 내역 확인창(티켓 구매 프로세스) -->
+			<div id="reserveConfirmPage" class="advanceTicketConfirmWindow">
+				
+					<div class="mainSketch">
+						<header class="mainHeader">
+							<a href="./index.html"><span class="returnTohome"></span></a>
+							<img class="mainLogo" src="./img/logo.png" alt="logo" />
+						</header>
+						<!-- 카드를 넣어주세요 -->
+						<section class="creditCard1">
+							<div class="titlePart">
+								<h2>결제하기</h2>
+							</div>
+							<img class="directionCard" src="./img/direction.png" alt="card" />
+							<img class="insertCard" src="./img/card.png" alt="card" />
+							<p>카드를 넣어주세요</p>
+							<span class="subText"><br />카드를 넣고<br />결제가 완료되기 전까지<br />카드를 뽑지 마세요</span>
+						</section>
+						<!-- 결제 진행중 -->
+						<section class="creditCard2">
+							<div class="titlePart">
+								<h2>결제하기</h2>
+							</div>
+							<div class="loadingCircle"></div>
+							<img class="insertCard" src="./img/card.png" alt="card" />
+							<p>결제 진행중...</p>
+							<span class="subText"><br />잠시만 기다려주세요</span>
+						</section>
+						<!-- 결제가 완료 되었습니다 -->
+						<section class="completePage">
+							<div class="titlePart">
+								<h2>결제완료</h2>
+							</div>
+							<img class="insertCard" src="./image/check.png" alt="card" />
+							<p>결제가 완료 되었습니다</p>
+							<span class="subText2">카드와 티켓을 챙겨주세요</span>
+						</section>
+					</div>
+				</article>
+
+				<header>
+					<h1 class="headerLogo">
+						<a class="homeBtn" href="javascript:void(0)"><i class="fa-solid fa-house-chimney"></i></a>
+						<img src="./img/logoRed.png" alt="logo" />
+						<a id="replyBtn" class="replyBtn"><i class="fa-solid fa-rotate-left"></i></a>
+					</h1>
+					<h2 class="headerTitle">예매 내역을 확인하세요</h2>
+				</header>
+				<main>
+					<section id="advanceTicketConfirm" class="advanceTicketConfirm">
+						<!-- <div id="paymentArea" class="paymentArea"> -->
+						<!-- <p>결제 금액<span id="paymentPrice"> 38,000원</span></p> -->
+						<!-- </div> -->
+						<div id="paymentContent" class="paymentContent paymentContentA">
+							<div id="paymentContentImg" class="paymentContentImg">
+								<img src="./img/levenement.jpg" alt="img" />
+							</div>
+							<div id="paymentContentInfo" class="paymentContentInfo">
+								<h3>
+									<div id="ageLimit" class="ageLimit">15</div>
+									레벤느망
+								</h3>
+								<div id="paymentContentInfoTime" class="paymentContentInfoTime">
+									<p>CGV 안산 2관 8층</p>
+									<p>2022.03.25(금) 14 : 55 ~ 16 : 45</p>
+								</div>
+								<div id="paymentContentInfoNumber" class="paymentContentInfoNumber">
+									<p>일반 1매</p>
+									<p>청소년 2매</p>
+									<p>장애인 1매</p>
+									<p>경로우대 1매</p>
+								</div>
+							</div>
+						</div>
+						<div class="paymentContentBottom">
+							<p>주문 금액<span id="totalTicketPrice">38,000원</span></p>
+							<p>할인 금액<span id="discountTicketPrice">0원</span></p>
+							<p>결제 금액<span id="finallyTicketPrice">33,000원</span></p>
+						</div>
+						<div class="paymentBtnArea">
+							<button id="ticketPointPaymentButton" class="paymentBtnPoint">포인트 결제</button>
+							<button id="ticketNormalPaymentButton" class="paymentBtn">바로 결제</button>
+						</div>
+					</section>
+				</main>
+			</div>
+			<!-- 예매 내역 출력창(기존 예매 티켓 프로세스) -->
+			<div id="availableTicketPage" class="advanceTicketConfirmWindow">
+				<header>
+					<h1 class="headerLogo">
+						<a class="homeBtn" href="javascript:void(0)"><i class="fa-solid fa-house-chimney"></i></a>
+						<img src="./img/logoRed.png" alt="logo" />
+						<a id="replyBtn" class="replyBtn"><i class="fa-solid fa-rotate-left"></i></a>
+					</h1>
+					<h2 class="headerTitle">예매 내역을 확인하세요</h2>
+				</header>
+				<main>
+					<section id="advanceTicketConfirm" class="advanceTicketConfirm advanceTicketConfirm2">
+						<!-- <div id="paymentArea" class="paymentArea">
+        <p>결제 금액<span id="paymentPrice"> 38,000원</span></p>
+      </div> -->
+						<div id="paymentContent" class="paymentContent paymentContentB">
+							<div id="paymentContentImg" class="paymentContentImg">
+								<img src="./img/levenement.jpg" alt="img" />
+							</div>
+							<div id="paymentContentInfo" class="paymentContentInfo">
+								<h3>
+									<div id="ageLimit" class="ageLimit">15</div>
+									레벤느망
+								</h3>
+								<div id="paymentContentInfoTime" class="paymentContentInfoTime">
+									<p>CGV 안산 2관 8층</p>
+									<p>2022.03.25(금) 14 : 55 ~ 16 : 45</p>
+								</div>
+								<div id="paymentContentInfoNumber" class="paymentContentInfoNumber">
+									<p>일반 1매</p>
+									<p>청소년 2매</p>
+									<p>장애인 1매</p>
+									<p>경로우대 1매</p>
+								</div>
+							</div>
+						</div>
+						<button id="printBtn" class="printBtn">출력하기</button>
+					</section>
+				</main>
+			</div>
+			<!-- 유효하지 않는 번호입니다 -->
+			<div id="ticketLookupFailureWindow" class="ticketLookupFailureWindow">
+				<div id="ticketLookupFailureTitleArea" class="ticketLookupFailureTitleArea">
+					<p><span>유효하지 않는</span> 번호입니다</p>
+				</div>
+				<div id="ticketLookupFailureContentsArea" class="ticketLookupFailureContentsArea">
+					<p>
+						유효하지 않는 번호 입니다<br />
+						다시 한번 확인 후 입력해주세요
+					</p>
+				</div>
+				<div id="ticketLookupFailureBtnArea" class="ticketLookupFailureBtnArea">
+					<button id="ticketLookupFailureBtn" class="ticketLookupFailureBtn">확인</button>
+				</div>
+			</div>
+			<!-- 관람 인원수를 선택해주세요 -->
+			<div id="seeNumberSelectionWindow" class="seeNumberSelectionWindow">
+				<div id="seeNumberSelectionTitleArea" class="seeNumberSelectionTitleArea">
+					<p>관람 인원수를 선택해주세요</p>
+					<span class="textContro">최대 <span class="textContro2"> 7매</span>까지 가능합니다</span>
+				</div>
+				<div id="seeNumberSelectionContentsArea" class="seeNumberSelectionContentsArea">
+					<div id="adultPerson" class="defaultPerson">
+						<div id="adultTextArea" class="defaultTextArea">
+							<p id="ticketRankA">일반</p>
+							<span id="ticketPrice"> 10,000</span>
+						</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber SelectionBtnStyle">0</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">1</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">2</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">3</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">4</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">5</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">6</div>
+						<div id="adultPersonNumber" class="defaultPersonNumber">7</div>
+					</div>
+					<div id="childPerson" class="defaultPerson">
+						<div id="childTextArea" class="defaultTextArea">
+							<p id="ticketRankB">청소년</p>
+							<span id="ticketPrice"> 8,000</span>
+						</div>
+						<div id="childPersonNumber" class="defaultPersonNumber SelectionBtnStyle">0</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">1</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">2</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">3</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">4</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">5</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">6</div>
+						<div id="childPersonNumber" class="defaultPersonNumber">7</div>
+					</div>
+					<div id="disablePerson" class="defaultPerson">
+						<div id="disableTextArea" class="defaultTextArea">
+							<p id="ticketRankC">장애인</p>
+							<span id="ticketPrice"> 6,000</span>
+						</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber SelectionBtnStyle">0</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">1</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">2</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">3</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">4</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">5</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">6</div>
+						<div id="disablePersonNumber" class="defaultPersonNumber">7</div>
+					</div>
+					<div id="seniorPerson" class="defaultPerson">
+						<div id="seniorTextArea" class="defaultTextArea">
+							<p id="ticketRankD">경로우대</p>
+							<span id="ticketPrice"> 6,000</span>
+						</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber SelectionBtnStyle">0</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">1</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">2</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">3</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">4</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">5</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">6</div>
+						<div id="seniorPersonNumber" class="defaultPersonNumber">7</div>
+					</div>
+				</div>
+				<p id="personSelectModalAlertMessage"><span>최대 7매</span>까지 가능합니다 <span>다시 선택해주세요</span></p>
+				<div id="seeNumberSelectionBtnArea" class="seeNumberSelectionBtnArea">
+					<button id="personSelectCompleteButton" class="seePersonSelectionBtn">완료</button>
+					<!-- <button id="personSelectCancelButton" class="seePersonSelectionBtn">취소</button> -->
+				</div>
+			</div>
+			<!-- 15세 이상 관람 가능 영화입니다 -->
+			<div id="ageLimitGuidanceWindow" class="ageLimitGuidanceWindow">
+				<div id="ageLimitGuidanceTitleArea" class="ageLimitGuidanceTitleArea">
+					<p><span>15세 이상 관람 가능</span> 영화입니다</p>
+				</div>
+				<div id="ageLimitGuidanceContentsArea" class="ageLimitGuidanceContentsArea">
+					<p>
+						본 영화는 보호자를 동반할 경우<br />
+						15세 미만이더라도 관람 가능합니다
+					</p>
+					<span>
+						타 고객의 영화 관람에 불편을 주지 않도록<br />
+						관람 에티켓을 꼭 지켜주세요
+					</span>
+				</div>
+				<div id="ageLimitGuidanceBtnArea" class="ageLimitGuidanceBtnArea">
+					<button id="ageLimitGuidanceBtn" class="ageLimitGuidanceBtn">확인</button>
+					<!-- <button id="ageNoticeNO" class="ageNoticeNO">취소</button> -->
+				</div>
+			</div>
+         <!-- 포인트 조회 모달창 -->
+			<div class="grayWall hidden"></div>
+				<article id="baseModal" class="baseModal">
+					<ul id="modalList">
+						<button id="modalRemove" class="closeButton"></button>
+						<!-----
+                                                <li id="usePoint1" class="modalSector">
+                                                      
+                                                      <h2 class="smallTitle">포인트 조회</h2>
+                                                      <img class="barcodeImage" src="./img/barcode.png" alt="바코드" />
+                                                      <p class="pointInfo">포인트 카드<br />또는<br />바코드를 스캔해주세요</p>
+                                                </li>
+                                          -->
+						<li id="usePoint2" class="modalSector">
+							<h2 class="smallTitle">포인트 조회</h2>
+							<h3>휴대폰 번호를 입력해주세요</h3>
+							<input
+								id="identifyPhone"
+								class="identifyPhone"
+								name="mobilePhone"
+								type="text"
+								placeholder="010-0000-0000"
+								readonly
+							/>
+							<section>
+								<div class="keyPad">
+									<button class="keyNumber0">0</button>
+									<button class="keyNumber1">1</button>
+									<button class="keyNumber2">2</button>
+									<button class="keyNumber3">3</button>
+									<button class="keyNumber4">4</button>
+									<button class="removeKey"></button>
+									<button class="enterKey">입력</button>
+									<button class="keyNumber5">5</button>
+									<button class="keyNumber6">6</button>
+									<button class="keyNumber7">7</button>
+									<button class="keyNumber8">8</button>
+									<button class="keyNumber9">9</button>
+									<button class="resetKey"></button>
+								</div>
+							</section>
+							<p class="pointSection">
+								가용 포인트<br />사용 포인트<br />남은 포인트<br />
+								<span id="totalPoint" class="totalPoint">0</span><br />
+								<button id="maximumUse" class="maximumUse">Max</button>
+								<button class="minusPoint"></button>
+								<span id="pointSelector" class="pointSelector">0</span><br />
+								<button class="plusPoint"></button>
+								<span id="remainsPoint" class="remainsPoint">0</span><br />
+							</p>
+							<div class="pointError hidden">
+								<p>포인트는<br /><span>100 단위</span>로만<br />사용 가능합니다</p>
+								<button id="errorClose" class="closeButton"></button>
+							</div>
+							<section class="bottomLine">
+								<button id="cummulativeAction" class="cummulativeAction">적립</button>
+								<button id="notCummulative" class="notCummulative">사용하기</button>
+							</section>
+						</li>
+            </ul>
+            </article>
+		</div>
+
+		<script src="./JS/windowOnload.js"></script>
+		<script src="./JS/ageNoticeModal.js"></script>
+		
+		<script src="./JS/movieCommun.js"></script>
+		<script src="./JS/movieSelectPage.js"></script>
+		<script src="./JS/personSelectModal.js"></script>
+
+			<script src="./JS/availableTicketPage.js"></script>
+   <script src="./JS/reserveConfirmPage.js"></script>
+
+		<script src="./JS/reservedTicketCheckPage.js"></script>
+		<script src="./JS/seatSelectPage.js"></script>
+		<script src="./JS/showPageFuncs.js"></script>
+		<script src="./JS/storeSelectPage.js"></script>
+		<script src="./JS/unavailableTicketModal.js"></script>
+		<script src="./JS/payment.js"></script>
+	</body>
+</html>
