@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "GongGothicMedium";
+  list-style-type: none;
+  text-decoration: none;
+  color: #363636;
+}
+
+.mainWrap {
+  position: absolute;
+  width: 70rem;
+  height: 90rem;
+  background-color: #eee;
+  z-index: 99;
+  /*.selectionBtn {
+    height: 57.3rem;
+    article {
+      width: 21.5rem;
+      height: 35rem;
+      border-radius: 3rem;
+      margin-left: 1rem;
+      display: inline-block;
+      transform: translate(0.5rem, 12rem);
+      cursor: pointer;
+      box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+      background-color: #ffffff;
+      img {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 3.8rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+      }
+      p {
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        text-align: center;
+      }
+    }
+  }*/
+}
+
+.mainWrap .headerLogo {
+  height: 19rem;
+  position: relative;
+}
+
+.mainWrap .headerLogo .logoBackground {
+  width: 100%;
+  height: 100%;
+}
+
+.mainWrap .headerLogo .mainLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.mainWrap .selectionBtn article {
+  width: 58.5rem;
+  height: 15rem;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  -webkit-transform: translate(6rem, 3rem);
+  transform: translate(6rem, 3rem);
+  cursor: pointer;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+  box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+  background-color: #ffffff;
+}
+
+.mainWrap .selectionBtn article img {
+  width: 12.5rem;
+  height: 12.5rem;
+  -webkit-transform: translate(-2rem, 1.1rem);
+  transform: translate(-2rem, 1.1rem);
+  float: right;
+}
+
+.mainWrap .selectionBtn article p {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  line-height: 15rem;
+  text-align: center;
+}
+
+.mainWrap .mainWrapFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=kioskmain.css.map */

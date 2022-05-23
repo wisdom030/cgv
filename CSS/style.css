@@ -1,0 +1,1615 @@
+@charset "UTF-8";
+/**
+body {
+	// display: flex;
+}
+**/
+@import url(./common.css);
+.onePage {
+  position: absolute;
+  width: 70rem;
+  height: 90rem;
+  margin: auto;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.storeSelectPage {
+  width: 70rem;
+  height: 90rem;
+}
+
+.titleLogo {
+  width: 20rem;
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(26rem, -15rem);
+          transform: translate(26rem, -15rem);
+}
+
+header {
+  width: 70rem;
+  height: 19rem;
+}
+
+header h1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9rem;
+  background-color: var(--background);
+}
+
+header h1 a.homeBtn {
+  margin-left: 2rem;
+}
+
+header h1 a.homeBtn i {
+  font-size: 5rem;
+  margin-right: 2.4rem;
+}
+
+header h1 img {
+  width: 10rem;
+  height: 5rem;
+}
+
+header h1 .replyBtn {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  right: 2.5rem;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+header h1 .replyBtn i {
+  font-size: 5rem;
+}
+
+header .headerTitle {
+  font-weight: 300;
+  color: #fff;
+  font-size: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--boxRed);
+}
+
+main {
+  width: 70rem;
+  height: 71rem;
+  position: relative;
+  background-color: var(--background);
+}
+
+.ticketPublishPage {
+  display: inline-block;
+  width: 70rem;
+  height: 90rem;
+  background-color: beige;
+}
+
+.ticketPublishPage .newTicketPurchase,
+.ticketPublishPage .reservedTicketPrint {
+  display: inline-block;
+  float: left;
+  margin: 5rem;
+  width: 25rem;
+  height: 25rem;
+  outline: 0;
+  border: none;
+  font-size: 6rem;
+  background-color: orange;
+}
+
+section.nowMovie {
+  width: 70rem;
+  height: 71rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+}
+
+section.nowMovie .bat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 11;
+  width: 28rem;
+  height: 66rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+  background-color: var(--background);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.nowMovie .reben {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 28rem;
+  height: 64rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+  background-color: var(--background);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.nowMovie .Math {
+  position: absolute;
+  top: 50%;
+  left: 42rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 28rem;
+  height: 64rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+  background-color: var(--background);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.nowMovie .mainContent img {
+  width: 22rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.4);
+  margin-bottom: 1.5rem;
+}
+
+section.nowMovie .mainContent .movieInfo {
+  padding: 1rem 0;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTitle {
+  position: relative;
+  width: 100%;
+  font-size: 2.4rem;
+  white-space: nowrap;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTitle::before {
+  position: absolute;
+  bottom: -1rem;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  background-color: #cfcccc;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater {
+  margin: 3rem 0;
+  width: 24.7rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .infoTheaterLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .infoTheaterLocation .infoLocation {
+  font-weight: 900;
+  color: var(--textRed);
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .infoTheaterLocation .infoFloor {
+  font-size: 1.4rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+  width: 24.7rem;
+  height: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* 스크롤바 설정*/
+  /* 스크롤바 막대 설정*/
+  /* 스크롤바 뒷 배경 설정*/
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime::-webkit-scrollbar-thumb {
+  height: 17%;
+  background-color: #218585;
+  border-radius: 1rem;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime::-webkit-scrollbar-track {
+  background-color: rgba(33, 133, 133, 0.33);
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime .timeBox {
+  width: 6.5rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 100;
+  background-color: #808080;
+  border-radius: 0.3rem;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /**
+						&:nth-child(3) {
+						}
+            **/
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime .timeBox:hover {
+  background-color: var(--Color2);
+  cursor: pointer;
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater .showTime .timeSeat {
+  text-align: center;
+  display: block;
+  width: 5rem;
+  font-size: 1.55rem;
+  font-weight: 300;
+  color: #82a67d;
+  /**
+						&:nth-child(3) {
+						}
+            **/
+}
+
+section.nowMovie .mainContent .movieInfo .infoTheater:nth-child(4) {
+  display: none;
+}
+
+section.nowMovie .mainContent:nth-child(2) {
+  opacity: 0.4;
+}
+
+section.nowMovie .mainContent:nth-child(3) {
+  opacity: 0.4;
+}
+
+section.nowMovie .previousBtn,
+section.nowMovie .afterBtn {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+section.nowMovie .previousBtn {
+  left: 13rem;
+}
+
+section.nowMovie .afterBtn {
+  right: 13rem;
+}
+
+.seatSelectionWindow {
+  display: block;
+  background-color: var(--background);
+  z-index: 30;
+}
+
+.seatSelectionWindow .ticketingArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.5rem solid #9a1f1677;
+  border-bottom: 0.5rem solid #9a1f1677;
+  padding: 1rem 0;
+}
+
+.seatSelectionWindow .ticketingArea .ticketingHistory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 38rem;
+}
+
+.seatSelectionWindow .ticketingArea .ticketingHistory .ticketRank {
+  margin: 0 1rem;
+  width: 10rem;
+  font-size: 2.5rem;
+}
+
+.seatSelectionWindow .ticketingArea .ticketingHistory .ticketNumber {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: right;
+  width: 5.5rem;
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.seatSelectionWindow .ticketingArea .TicketingPrice {
+  font-size: 3.8rem;
+}
+
+.seatSelectionWindow .screenBox {
+  text-align: center;
+  width: 55rem;
+  height: 4.5rem;
+  background-color: #424242;
+  margin: 3rem auto;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #fff;
+  font-weight: 100;
+  word-spacing: 2.2rem;
+}
+
+.seatSelectionWindow .seatArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+}
+
+.seatSelectionWindow .seatArea .matrixGW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seatSelectionWindow .seatArea .seatNumber {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  margin: 0.75rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+.seatSelectionWindow .seatArea .sideAreaA {
+  margin-right: 3rem;
+}
+
+.seatSelectionWindow .seatArea .sideAreaB {
+  margin-left: 3rem;
+}
+
+.seatSelectionWindow .paymentArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33rem;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  margin-right: 3rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleAdult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleAdult p {
+  width: 30rem;
+  display: block;
+  text-align: justify;
+  width: 12rem;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 4.8rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleAdult button {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #797979;
+  border: 0;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleAdult input {
+  margin: 0 1rem;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #fddedb;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleChildren {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleChildren p {
+  width: 12rem;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleChildren button {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #797979;
+  color: #fff;
+  border: 0;
+  border-radius: 0.2rem;
+}
+
+.seatSelectionWindow .paymentArea .paymentPeople .peopleChildren input {
+  margin: 0 1rem;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #fddedb;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.seatSelectionWindow .paymentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--boxRed);
+  color: #fff;
+  cursor: pointer;
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+}
+
+.seatSelectionWindow .seatSelection .emptySeat {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.seatSelectionWindow .seatSelection .disabledSeat {
+  background-color: '#343434';
+  cursor: default;
+}
+
+.seatSelectionWindow .seatSelection .SelectedSeat {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.seatSelectionWindow .seatSelection .BookedSeat {
+  position: relative;
+  background-color: #343234;
+  cursor: default;
+}
+
+.seatSelectionWindow .seatSelection .BookedSeat::before {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 3rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: '\58';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: var(--background);
+}
+
+section.ticketingTicketInquiry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 70rem;
+  height: 71rem;
+  box-sizing: border-box;
+}
+
+section.ticketingTicketInquiry .ticketingTicketInquiryTitleArea {
+  padding: 2rem;
+}
+
+section.ticketingTicketInquiry .ticketingTicketInquiryTitleArea p {
+  font-size: 4rem;
+}
+
+section.ticketingTicketInquiry .ticketingTicketInquiryTitleArea span {
+  color: var(--textRed);
+  font-size: 4rem;
+}
+
+section.ticketingTicketInquiry .inputReservationNumber input {
+  outline: none;
+  font-size: 5rem;
+  text-align: center;
+  width: 50rem;
+  height: 8rem;
+  border: 0;
+  background-color: transparent;
+}
+
+section.ticketingTicketInquiry .inputReservationNumber input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+section.ticketingTicketInquiry .inputReservationNumber input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+section.ticketingTicketInquiry .inputReservationNumber input::-ms-input-placeholder {
+  color: #aaa;
+}
+
+section.ticketingTicketInquiry .inputReservationNumber input::placeholder {
+  color: #aaa;
+}
+
+section.ticketingTicketInquiry .ticketingTicketBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33rem;
+  height: 42.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.ticketingTicketInquiry .ticketingTicketBtn .ticketingTicketNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+section.ticketingTicketInquiry .ticketingTicketBtn .ticketingTicketNumber:nth-child(10) i,
+section.ticketingTicketInquiry .ticketingTicketBtn .ticketingTicketNumber:nth-child(12) i {
+  font-size: 3rem;
+}
+
+section.ticketingTicketInquiry .ticketingTicketInquiryBtn {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--boxRed);
+  color: #fff;
+  cursor: pointer;
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.advanceTicketConfirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advanceTicketConfirm .paymentArea {
+  width: 100%;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-top: 0.5rem solid #9a1f1677;
+  border-bottom: 0.5rem solid #9a1f1677;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentArea p {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.advanceTicketConfirm .paymentArea p span {
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+.advanceTicketConfirm .paymentContentA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.advanceTicketConfirm .paymentContentA::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  bottom: -3rem;
+  background-color: rgba(51, 51, 51, 0.4);
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentImg {
+  width: 24rem;
+  height: 33.5rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.3);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.3);
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentImg img {
+  width: 24rem;
+  height: 33.5rem;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo {
+  margin: 0 2.5rem;
+  width: 34.5rem;
+  height: 33.5rem;
+  position: relative;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo h3 {
+  font-size: 3.8rem;
+  font-size: 100;
+  margin: 1rem 0;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo h3 .ageLimit {
+  width: 3.8rem;
+  height: 3.8rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #c89135;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo .paymentContentInfoTime p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo .paymentContentInfoNumber {
+  position: absolute;
+  bottom: 0;
+}
+
+.advanceTicketConfirm .paymentContentA .paymentContentInfo .paymentContentInfoNumber p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.advanceTicketConfirm .paymentContentBottom {
+  width: 70%;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.advanceTicketConfirm .paymentContentBottom p {
+  font-size: 3rem;
+  display: block;
+  margin: 2rem 0;
+}
+
+.advanceTicketConfirm .paymentContentBottom span {
+  position: absolute;
+  font-size: 3rem;
+  text-align: right;
+  right: 0;
+  color: var(--textRed);
+}
+
+.advanceTicketConfirm .paymentBtnArea .paymentBtnPoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 10rem;
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  font-size: 4rem;
+}
+
+.advanceTicketConfirm .paymentBtnArea .paymentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 10rem;
+  background-color: var(--boxRed);
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  font-size: 4rem;
+}
+
+.testCord {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #363636;
+  position: absolute;
+  top: 10rem;
+  left: 55rem;
+}
+
+.advanceTicketConfirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advanceTicketConfirm .paymentArea {
+  width: 100%;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-top: 0.5rem solid #9a1f1677;
+  border-bottom: 0.5rem solid #9a1f1677;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentArea p {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.advanceTicketConfirm .paymentArea p span {
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+
+.advanceTicketConfirm .paymentContentB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentImg {
+  width: 24rem;
+  height: 33.5rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.3);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(51, 51, 51, 0.3);
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentImg img {
+  width: 24rem;
+  height: 33.5rem;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo {
+  margin: 0 2.5rem;
+  width: 34.5rem;
+  height: 33.5rem;
+  position: relative;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo h3 {
+  font-size: 3.8rem;
+  font-size: 100;
+  margin: 1rem 0;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo h3 .ageLimit {
+  width: 3.8rem;
+  height: 3.8rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #c89135;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo .paymentContentInfoTime p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo .paymentContentInfoNumber {
+  position: absolute;
+  bottom: 0;
+}
+
+.advanceTicketConfirm .paymentContentB .paymentContentInfo .paymentContentInfoNumber p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.advanceTicketConfirm .printBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--boxRed);
+  color: #fff;
+  cursor: pointer;
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+}
+
+/**
+.currentScreenings {
+}
+**/
+.movieSelectionWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 58rem;
+  height: 46rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+  border-radius: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2.5rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 99;
+  height: 33rem;
+}
+
+.movieSelectionWindow .movieSelectionTitleArea p {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowMovie img {
+  display: block;
+  width: 11rem;
+  height: 15.5rem;
+  background-color: #808080;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowInfo .movieTitle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  width: 28rem;
+  height: 7rem;
+  background-color: #d8d8d8;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowInfo .movieFloor,
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowInfo .movieTime {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28rem;
+  height: 4.25rem;
+  background-color: #b5b5b5;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowInfo .movieFloor {
+  padding: 1rem;
+  font-size: 2rem;
+  color: #9a1e16;
+}
+
+.movieSelectionWindow .movieSelectionContentsArea .paymentWindowMain .paymentWindowInfo .movieTime {
+  padding: 0 1rem 1rem;
+  font-size: 3rem;
+}
+
+.movieSelectionWindow .movieSelectionBtnArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movieSelectionWindow .movieSelectionBtnArea button {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  width: 16rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  margin: 0 1.5rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: 0.3rem solid #595959;
+}
+
+.movieSelectionWindow .movieSelectionBtnArea button:hover {
+  background-color: var(--Color4);
+  color: #fff;
+  cursor: pointer;
+}
+
+.movieSelectionWindow .movieSelectionBtnArea .selectionBtn {
+  background-color: #ba1a0f;
+  color: #fff;
+  border: 0;
+}
+
+.ticketLookupFailureWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 58rem;
+  height: 46rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+  border-radius: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2.5rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 99;
+  height: 40rem;
+  box-sizing: border-box;
+}
+
+.ticketLookupFailureWindow .ticketLookupFailureTitleArea p {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.ticketLookupFailureWindow .ticketLookupFailureTitleArea p span {
+  font-size: 3.5rem;
+  font-weight: 100;
+  color: #ba1a0f;
+}
+
+.ticketLookupFailureWindow .ticketLookupFailureContentsArea p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.ticketLookupFailureWindow .ticketLookupFailureBtnArea button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 5.5rem;
+  background-color: #ba1a0f;
+  border-radius: 1.5rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.seeNumberSelectionWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 58rem;
+  height: 46rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+  border-radius: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2.5rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 99;
+  height: 55rem;
+  text-align: center;
+}
+
+.seeNumberSelectionWindow p {
+  font-size: 2.5rem;
+}
+
+.seeNumberSelectionWindow p span {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: var(--textRed);
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionTitleArea {
+  margin: 2rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionTitleArea p {
+  font-size: 3rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionTitleArea span {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionTitleArea .textContro2 {
+  font-size: 2.5rem;
+  color: var(--textRed);
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 0.1rem;
+  padding: 1rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson .defaultTextArea {
+  width: 10rem;
+  text-align: left;
+  margin-right: 4rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson .defaultTextArea p {
+  font-size: 2.5rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson .defaultTextArea span {
+  font-size: 1.5rem;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson .defaultPersonNumber {
+  width: 3rem;
+  margin: 0 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 96%;
+  height: 0.4rem;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson:nth-child(4)::before {
+  position: absolute;
+  content: '';
+  width: 0;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionContentsArea .defaultPerson .SelectionBtnStyle {
+  background-color: #feccbe;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionBtnArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seeNumberSelectionWindow .seeNumberSelectionBtnArea .seePersonSelectionBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 4rem;
+  background-color: var(--boxRed);
+  border-radius: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  margin: 0.5rem;
+}
+
+.ageLimitGuidanceWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 58rem;
+  height: 46rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+          box-shadow: 0.5rem 0.5rem 3rem rgba(50, 50, 50, 0.2);
+  border-radius: 2rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 2.5rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 99;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7rem 0;
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceTitleArea p {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceTitleArea p span {
+  font-size: 4rem;
+  font-weight: 100;
+  color: var(--textRed);
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceContentsArea p {
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceContentsArea span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: var(--textRed);
+  opacity: 0.5;
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceBtnArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ageLimitGuidanceWindow .ageLimitGuidanceBtnArea button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 5.5rem;
+  border: 0;
+  border-radius: 1.5rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: var(--boxRed);
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+body {
+  position: relative;
+}
+
+body .storeSelectPage {
+  position: absolute;
+  z-index: 90;
+}
+
+body .ticketPublishPage {
+  position: absolute;
+  z-index: 80;
+}
+
+body .currentScreenings {
+  position: absolute;
+  z-index: 70;
+}
+
+body .seatSelectionWindow {
+  position: absolute;
+  z-index: 60;
+}
+
+body .advanceTicketConfirmWindow {
+  position: absolute;
+  z-index: 50;
+  /**
+		.advanceTicketConfirm2 {
+			// margin-top: 5rem;
+		}
+    **/
+}
+
+body .advanceTicketInquiryWindow {
+  position: absolute;
+  z-index: 75;
+}
+
+body .seeNumberSelectionWindow {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(10%, 44%);
+          transform: translate(10%, 44%);
+  z-index: 61;
+}
+
+body .ageLimitGuidanceWindow {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(10%, 65%);
+          transform: translate(10%, 65%);
+  z-index: 71;
+}
+
+body .ticketLookupFailureWindow {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(11%, 75%);
+          transform: translate(11%, 75%);
+  z-index: 76;
+}
+/*# sourceMappingURL=style.css.map */

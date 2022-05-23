@@ -1,0 +1,58 @@
+* {
+  font-size: 10px;
+  font-family: "GongGothicMedium";
+  flood-color: #111;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+}
+
+/* 색상 등록 */
+:root {
+  --textRed: #ba1a0f; /* 글자 빨강 */
+  --boxRed: #cf0c00; /* 박스 빨강 */
+  --menuRed: #cf0c00; /* 메뉴 빨강 */
+  --background: #f1f1f1; /* 배경색 */
+  --Color1: #ba1a0f;
+  --Color2: #9a1e16;
+  --Color3: #eee;
+  --Color4: #363636;
+}
+
+/* 사용 폰트 */
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* input에서 숫자타입을 사용할 경우 생기는 화살표 제거 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button,
+.paymentBtn,
+.seatNumber {
+  cursor: pointer;
+}
+
+i {
+  font-size: 4rem;
+}
+
+.previousBtn i,
+.afterBtn i {
+  font-size: 7rem;
+}
+
+input {
+  border: 0;
+}

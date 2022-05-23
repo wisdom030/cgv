@@ -1,0 +1,1596 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'GongGothicLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 10px;
+	font-family: 'GongGothicLight';
+	list-style-type: none;
+	text-decoration: none;
+	color: #363636;
+}
+$twoMenusize: 27.5rem;
+$threeMenuize: 22.5rem;
+$footerButtonfontSize: 2.7rem;
+
+.mainLogo {
+	width: 10rem;
+	height: 4.5rem;
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+}
+
+.mainBox {
+	width: 70rem;
+	height: 90rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	.mainHeader {
+		height: 9rem;
+	}
+	.headerLogo {
+		display: inline-block;
+		transform: translate(10rem, 1.5rem);
+	}
+
+	.homeIcon {
+		display: inline-block;
+		position: absolute;
+		transform: translate(3rem, 1rem);
+	}
+
+	.mainMenu {
+		height: 9rem;
+		.menuBar {
+			transform: translate(-0.3rem, 2rem);
+			.menuCombo {
+				background-color: #ed3214;
+				border: 0.3rem solid #ed3214;
+				p {
+					color: white;
+				}
+			}
+			li {
+				display: inline-block;
+				text-align: center;
+				margin-left: 1.5rem;
+				width: 15rem;
+				height: 4.5rem;
+				border-radius: 1rem;
+				border: 0.3rem solid #363636;
+				background-color: #ffffff;
+				p {
+					font-size: 2.4rem;
+					line-height: 4.8rem;
+					color: #363636;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.menuArea {
+		position: relative;
+		width: 70rem;
+		height: 55rem;
+		overflow: hidden;
+		.comboMenu {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70rem;
+			height: 55rem;
+			margin-top: 3rem;
+			padding-left: 8rem;
+			.comboBtn {
+				li {
+					width: 22.5rem;
+					height: 22.5rem;
+					margin-left: 2.5rem;
+					margin-bottom: 3rem;
+					border-radius: 3rem;
+					cursor: pointer;
+					text-align: center;
+					display: inline-block;
+					background-color: #ffffff;
+					box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+					img {
+						width: 17rem;
+						height: 17rem;
+						margin-left: 0rem;
+					}
+					p {
+						font-size: 2rem;
+						line-height: 3rem;
+					}
+					span {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+		.popcornMenu {
+			position: absolute;
+			top: 0;
+			left: 70rem;
+			width: 70rem;
+			height: 55rem;
+			margin-top: 3rem;
+			padding-left: 8rem;
+			.popcornBtn {
+				li {
+					width: 22.5rem;
+					height: 22.5rem;
+					margin-left: 3rem;
+					margin-bottom: 3rem;
+					border-radius: 3rem;
+					cursor: pointer;
+					text-align: center;
+					display: inline-block;
+					background-color: #ffffff;
+					box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+					img {
+						width: 17rem;
+						height: 17rem;
+						margin-left: 0rem;
+					}
+					p {
+						font-size: 2rem;
+						line-height: 3rem;
+						text-align: center;
+					}
+					span {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+
+		.beverageMenu {
+			width: 70rem;
+			height: 55rem;
+			padding-top: 3rem;
+			padding-left: 8rem;
+			position: absolute;
+			top: 0;
+			left: 140rem;
+			.beverageBtn {
+				li {
+					width: 22.5rem;
+					height: 22.5rem;
+					margin-left: 3rem;
+					margin-bottom: 3rem;
+					border-radius: 3rem;
+					cursor: pointer;
+					text-align: center;
+					display: inline-block;
+					background-color: #ffffff;
+					box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+					img {
+						width: 17rem;
+						height: 17rem;
+						margin-left: 0rem;
+					}
+					p {
+						font-size: 2rem;
+						line-height: 3rem;
+						text-align: center;
+					}
+					span {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+		.snackMenu {
+			width: 70rem;
+			height: 55rem;
+			padding-top: 3rem;
+			padding-left: 8rem;
+			position: absolute;
+			top: 0;
+			left: 210rem;
+			.snackBtn {
+				li {
+					width: 22.5rem;
+					height: 22.5rem;
+					margin-left: 3rem;
+					margin-bottom: 3rem;
+					border-radius: 3rem;
+					cursor: pointer;
+					text-align: center;
+					display: inline-block;
+					background-color: #ffffff;
+					box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+					img {
+						width: 17rem;
+						height: 17rem;
+						margin-left: 0rem;
+					}
+					p {
+						font-size: 2rem;
+						line-height: 3rem;
+						text-align: center;
+					}
+					span {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+
+	.orderArea {
+		display: flex;
+		.orderBox {
+			display: inline-block;
+			flex: 7.5;
+			overflow-y: auto;
+			background-color: #ffffff;
+			position: relative;
+			ul {
+				width: 42rem;
+				height: 10rem;
+				overflow-x: hidden;
+				padding-top: 2rem;
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				.orderMenu {
+					margin: 0 auto;
+					text-align: right;
+					padding-right: 2rem;
+					padding-top: 1rem;
+					padding-bottom: 1rem;
+					border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+					width: 80%;
+					display: flex;
+				}
+				.orderMenu > * {
+					padding-left: 1rem;
+					padding-right: 1rem;
+					font-size: 1.2rem;
+				}
+				.orderMenu > i {
+					cursor: pointer;
+					font-size: 1.2rem;
+					flex: 0.1;
+				}
+				.orderMenu span {
+					padding-left: 2rem;
+					text-align: left;
+					flex: 1;
+				}
+				.orderMenu > div {
+					display: inline-block;
+					flex: 1;
+					text-align: center;
+				}
+				.orderMenu div {
+					display: none;
+				}
+				.orderMenu .price {
+					text-align: right;
+				}
+				.orderMenu p {
+					flex: 0.1;
+					text-align: center;
+				}
+			}
+			.totalPrice {
+				position: absolute;
+				font-size: 2rem;
+				line-height: 2rem;
+				height: 3.8rem;
+				bottom: 0;
+				left: 2rem;
+				p {
+					position: absolute;
+					font-size: 2rem;
+					top: 0;
+					padding-left: 27rem;
+				}
+				span {
+					position: absolute;
+					left: 35rem;
+					font-size: 2rem;
+				}
+			}
+		}
+		.orderPayment {
+			flex: 2.5;
+			display: inline-block;
+			.paymentBtn {
+				cursor: pointer;
+				width: 28rem;
+				height: 17rem;
+				background-color: #cf0c00;
+				p {
+					text-align: center;
+					line-height: 16.5rem;
+					font-size: 4rem;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	/*.orderArea {
+    .orderBox {
+      display: inline-block;
+      float: left;
+      background-color: #ffffff;
+      width: 42rem;
+      height: 17rem;
+      ul {
+        padding: 2rem;
+        li {
+          .orderName {
+            display: inline-block;
+            font-size: 1.6rem;
+          }
+          .orderCount {
+            margin-left: 6rem;
+            font-size: 1.6rem;
+          }
+          .orderCount::before {
+            content: "\e91f";
+            font-family: "xeicon";
+          }
+          .orderCount::after {
+            content: "\e918";
+            font-family: "xeicon";
+          }
+          .orderPrice {
+            display: inline-block;
+            margin-left: 6rem;
+            font-size: 1.6rem;
+            span {
+              font-size: 1.6rem;
+            }
+          }
+            .orderPrice::after {
+            margin-left: 3rem;
+            content: "\e926";
+            font-family: "xeicon";
+            }
+        }
+      }
+    }
+    .orderPayment {
+      display: inline-block;
+      .paymentBtn {
+        cursor: pointer;
+        width: 28rem;
+        height: 17rem;
+        background-color: #ed3124;
+        p {
+          text-align: center;
+          line-height: 16.5rem;
+          font-size: 4rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }*/
+	/* 콤보  클릭 모달*/
+	.comboModal {
+		position: absolute;
+		width: 100%;
+		top: 90rem;
+		transition: 0.5s;
+		.choiceArea {
+			height: 77.5rem;
+			background-color: #eee;
+			border-top-left-radius: 5rem;
+			border-top-right-radius: 5rem;
+			.closeButton::after {
+				content: '\f00d';
+				font-family: FontAwesome;
+				font-weight: 300;
+				font-size: 3rem;
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				left: 90%;
+				top: 3%;
+				z-index: 100;
+				cursor: pointer;
+			}
+			.comboPopcornchoice,
+			.largeCombochoice {
+				height: 57.5rem;
+				li {
+					/**
+               width: 19rem;
+               height: 19rem;
+               margin-top: 1.5rem;
+               **/
+					width: 22.5rem;
+					height: 22.5rem;
+					transform: translate(8rem, 1rem);
+					margin-top: 1.5rem;
+					margin-left: 3rem;
+					margin-bottom: 1.5rem;
+					border-radius: 3rem;
+					cursor: pointer;
+					text-align: center;
+					display: inline-block;
+					background-color: #ffffff;
+					box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+					img {
+						width: 14rem;
+						height: 14rem;
+					}
+					p {
+						margin-top: 2rem;
+						font-size: 1.8rem;
+					}
+					span {
+						display: block;
+						font-size: 1.3rem;
+						margin-top: -1.2rem;
+						margin-bottom: 1rem;
+						color: #d94925;
+					}
+				}
+			}
+			.modalBtn {
+				position: absolute;
+				display: flex;
+				top: 65rem;
+				.modalClose {
+					width: 28rem;
+					height: 12.5rem;
+					font-size: 3rem;
+					font-weight: 700;
+					border: none;
+					cursor: pointer;
+					background-color: #eeeeee;
+				}
+				.modalNext {
+					width: 42rem;
+					height: 12.5rem;
+					font-size: 3rem;
+					font-weight: 700;
+					border: none;
+					cursor: pointer;
+					color: #ffffff;
+					background-color: #cf0c00;
+				}
+			}
+		}
+	}
+}
+
+/** 모달 수량 안내 **/
+.selectInfomation {
+	font: {
+		size: 4rem;
+		weight: 500;
+	}
+	text-align: center;
+	line-height: 5rem;
+	padding-top: 1.5rem;
+}
+.selectInfomationDrink {
+	font: {
+		size: 4rem;
+		weight: 500;
+	}
+	text-align: center;
+	line-height: 5rem;
+	padding-top: 1.5rem;
+}
+.checkQty {
+	//visibility: hidden;
+	position: absolute;
+	left: 25rem;
+	top: 60rem;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 2.5rem;
+	span {
+		font-size: 2.5rem;
+		color: #ba1a0f;
+	}
+}
+.checkQtyDrink {
+	visibility: hidden;
+	position: absolute;
+	left: 25rem;
+	top: 60rem;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 2.5rem;
+	span {
+		font-size: 2.5rem;
+		color: #ba1a0f;
+	}
+}
+//모달 선택지가 2개일 때의 list
+
+.comboModal {
+	position: absolute;
+	top: 90rem;
+	transition: 0.5s;
+	.choiceArea {
+		height: 77.5rem;
+		background-color: #ffffff;
+		border-top-left-radius: 5rem;
+		border-top-right-radius: 5rem;
+
+		.drinkChoice {
+			position: absolute;
+			top: 10rem;
+			left: 70rem;
+			transition: 0.5s;
+			text-align: center;
+			h1 {
+				margin-top: -10rem;
+				margin-left: 2rem;
+			}
+			p {
+				margin-top: -10rem;
+			}
+		}
+
+		.doubleCombochoice,
+		.smallSetchoice,
+		.popcornChoice,
+		.drinkChoice {
+			height: 57.5rem;
+			position: absolute;
+			li {
+				width: $twoMenusize;
+				height: $twoMenusize;
+				margin-top: 0rem;
+				margin-left: 5rem;
+				margin-bottom: 3rem;
+				border-radius: 3rem;
+				transform: translate(0, 9rem);
+				cursor: pointer;
+				text-align: center;
+				display: inline-block;
+				background-color: #fff;
+				box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+				img {
+					width: 15.5rem;
+					height: 15.5rem;
+				}
+				p {
+					margin-top: 2rem;
+					font-size: 1.8rem;
+				}
+				span {
+					display: block;
+					font-size: 1.3rem;
+					margin-top: -1.2rem;
+					margin-bottom: 1rem;
+					color: #d94925;
+				}
+				span::before {
+					content: '+';
+				}
+			}
+		}
+	}
+}
+
+// 모달 선택지가 3개일 때의 list
+.comboModal {
+	.choiceArea {
+		.comboPopcornchoice,
+		.largeCombochoice {
+			height: 57.5rem;
+			position: absolute;
+			li {
+				width: $threeMenuize;
+				height: $threeMenuize;
+				margin-top: 1rem;
+				margin-left: 6rem;
+				margin-bottom: 3rem;
+				border-radius: 3rem;
+				transform: translate(3rem, -3rem);
+				cursor: pointer;
+				text-align: center;
+				display: inline-block;
+				background-color: #fff;
+				box-shadow: 0.5rem 0.5rem 1rem 0rem #c2c2c2;
+				img {
+					width: 12.5rem;
+					height: 12.5rem;
+				}
+				p {
+					margin-top: 2rem;
+					font-size: 1.8rem;
+				}
+				span {
+					display: block;
+					font-size: 1.3rem;
+					margin-top: -1.2rem;
+					margin-bottom: 1rem;
+					color: #d94925;
+				}
+				span::before {
+					content: '+';
+				}
+			}
+		}
+	}
+}
+//홈버튼, 뒤로가기 버튼
+
+.returnTohome::before {
+	content: '\e3af';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 5rem;
+	background-color: transparent;
+	position: absolute;
+	left: 0rem;
+	margin-top: -3rem;
+	z-index: 150;
+	cursor: pointer;
+}
+
+.returnToprev {
+	position: absolute;
+	left: 8rem;
+}
+.returnToprev::before {
+	content: '\f2ea';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 5rem;
+	background-color: transparent;
+	left: 57rem;
+	margin-top: -0.5rem;
+	z-index: 100;
+	position: absolute;
+	cursor: pointer;
+	visibility: visible;
+}
+
+/***  주문 내역 확인창 ***/
+
+.checkOrder {
+	visibility: hidden;
+	width: 70rem;
+	height: 90rem;
+	background-color: #f1f1f1;
+	position: absolute;
+	left: 50%;
+	//top: 12.5%;
+	top: 0%;
+	transform: translate(-50%, 0);
+	z-index: 150;
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+}
+.basketHeader {
+	width: 70rem;
+	height: 10rem;
+	img {
+		display: block;
+		position: absolute;
+		left: 10rem;
+		top: 2.2rem;
+	}
+	.returnTohome::before {
+		left: 2rem;
+		top: 5rem;
+		visibility: visible;
+	}
+	.returnToprev {
+		position: absolute;
+		left: 8rem;
+	}
+	.returnToprev::before {
+		content: '\f2ea';
+		font-family: FontAwesome;
+		font-weight: 300;
+		font-size: 5rem;
+		background-color: transparent;
+		left: 62rem;
+		top: 3rem;
+		margin-top: -0.5rem;
+		z-index: 100;
+		position: absolute;
+		cursor: pointer;
+		visibility: visible;
+	}
+}
+.orderCheckbox {
+	width: 45rem;
+	height: 30rem;
+	border: 0.2rem solid #c2c2c2;
+	position: relative;
+	display: block;
+	left: 50%;
+	transform: translate(-50%, 15rem);
+	overflow-y: auto;
+}
+.titleLine {
+	width: 70rem;
+	height: 10rem;
+	position: absolute;
+	top: 10rem;
+	left: 0rem;
+	background-color: #cf0c00;
+	text-align: center;
+	display: block;
+	margin-bottom: 5rem;
+}
+.titleLine > h2 {
+	color: #fff;
+	line-height: 9.8rem;
+	font: {
+		size: 4rem;
+		weight: 700;
+	}
+}
+
+.orderCheckbox > p:nth-child(odd) {
+	margin-top: 4rem;
+	margin-left: 3rem;
+	font: {
+		size: 3rem;
+	}
+	line-height: 4rem;
+	float: left;
+	display: block;
+}
+.orderCheckbox > span {
+	margin-top: 4rem;
+	margin-right: 3rem;
+	font: {
+		size: 3rem;
+	}
+	color: #ba1a0f;
+	float: right;
+	display: block;
+}
+
+.orderCheckbox > p:nth-child(even) {
+	margin-top: 7rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	line-height: 4rem;
+	font: {
+		size: 1.5rem;
+	}
+	border-bottom: 0.1rem solid #101010;
+	display: block;
+}
+.checkOrder > section {
+	text-align: center;
+	height: 20rem;
+	p {
+		font: {
+			size: 3rem;
+			weight: 500;
+		}
+		float: left;
+		transform: translate(15rem, 20rem);
+		line-height: 5rem;
+		color: #363636;
+		span {
+			font: {
+				size: 3rem;
+				weight: 700;
+			}
+			transform: translate(28rem, -15rem);
+			color: #ba1a0f;
+			float: right;
+			clear: both;
+		}
+	}
+	.checkOrder > span:nth-last-of-type(1) {
+		font: {
+			size: 3.5rem;
+		}
+		margin-left: -1rem;
+	}
+}
+.cutOff {
+	content: '';
+	width: 43rem;
+	border-bottom: 0.3rem solid #c2c2c2;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 15rem);
+	padding-bottom: 1rem;
+	padding-top: 1.5rem;
+	display: block;
+}
+
+.paymentSector {
+	width: 70rem;
+	height: 15rem;
+	display: flex;
+	flex-direction: row;
+	transform: translate(0, 10rem);
+	.pointProcess {
+		width: 30rem;
+		height: 10rem;
+		background-color: white;
+		border: none;
+		cursor: pointer;
+		margin: 0 auto;
+		font: {
+			size: 3rem;
+			weight: 700;
+		}
+	}
+	.directProcess {
+		width: 50rem;
+		height: 10rem;
+		background-color: #cf0c00;
+		border: none;
+		margin: 0 auto;
+		color: white;
+		cursor: pointer;
+		font: {
+			size: 3rem;
+			weight: 700;
+		}
+	}
+}
+
+/**  수량 조절  **/
+.plusCount::after {
+	content: '\2b';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: #333333;
+	border: none;
+	outline: 0;
+	color: #eee;
+}
+.minusCount::before {
+	content: '\f068';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: #333333;
+	color: #fff;
+}
+.plusCountDrink::after {
+	content: '\2b';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: #333333;
+	border: none;
+	outline: 0;
+	color: #eee;
+}
+.minusCountDrink::before {
+	content: '\f068';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background-color: #333333;
+	color: #fff;
+}
+.countingNumber {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2rem;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	direction: rtl;
+	left: 50%;
+	margin-top: 0rem;
+	margin-left: 0rem;
+	margin-right: 1.5rem;
+	background-color: transparent;
+	border: none;
+}
+
+.drinkSelect {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2rem;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	direction: rtl;
+	left: 50%;
+	margin-top: 0rem;
+	margin-left: 0rem;
+	margin-right: 1.5rem;
+	background-color: transparent;
+	border: none;
+}
+
+/********************
+세트별 모달 내용 히든 처리
+.comboPopcornchoice cgv콤보
+.largeCombochoice   라지콤보
+.doubleCombochoice  더블콤보
+.smallSetchoice     스몰세트
+
+
+.popcornChoice      팝콘 메뉴
+.drinkChoice        세트메뉴에 있는 음료 선택
+
+********************/
+// .comboModal > .choiceArea > .drinkChoice,
+.comboModal > .choiceArea > .comboPopcornchoice,
+.comboModal > .choiceArea > .smallSetchoice,
+.comboModal > .choiceArea > .doubleCombochoice,
+.comboModal > .choiceArea > .popcornChoice {
+	visibility: hidden;
+}
+
+/*** 공통,결제 파트 시작 ***/
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(238, 232, 210);
+}
+
+.mainSketch {
+	width: 70rem;
+	height: 90rem;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	//overflow: hidden;
+	z-index: 1000;
+	position: absolute;
+	left: 170rem;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	.mainHeader {
+		margin-top: 4rem;
+		height: 9rem;
+		img {
+			position: absolute;
+			top: 2rem;
+			left: 10rem;
+		}
+		span {
+			display: inline-block;
+			transform: translate(0rem, 39.5rem);
+		}
+	}
+}
+
+.mainSketch > header,
+.mainSketch > main,
+.mainSketch > footer {
+	width: 70rem;
+}
+
+.mainSketch > header,
+.mainSketch > footer {
+	height: 10rem;
+}
+.mainSketch > main {
+	height: 70rem;
+}
+
+.hidden {
+	display: none;
+	z-index: -500;
+}
+
+/*** header ***/
+// 메인 타이틀
+
+.mainTitle {
+	font: {
+		weight: 400;
+		size: 4rem;
+	}
+	margin-top: 3rem;
+	line-height: 4.2rem;
+	text-align: center;
+}
+
+.closeButton::after {
+	content: '\f00d';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 3rem;
+	position: absolute;
+	background-color: transparent;
+	left: 65rem;
+	top: 2.7rem;
+	z-index: 100;
+	cursor: pointer;
+}
+.returnTohome::before {
+	left: 2rem;
+	top: 5rem;
+	visibility: visible;
+}
+.returnToprev::before {
+	left: 62rem;
+	top: 3rem;
+	visibility: visible;
+}
+/*** main ***/
+
+.discountGroup {
+	margin: {
+		top: 5rem;
+		bottom: 5rem;
+		left: 11rem;
+	}
+}
+.discountArea {
+	width: 22.5rem;
+	height: 22.5rem;
+	background-color: #eee;
+	border: 0;
+	border-radius: 10%;
+	margin-left: 1rem;
+	box-shadow: 0.5rem 0.5rem 1rem 0rem #e4e4e4;
+	cursor: pointer;
+	font: {
+		size: 4rem;
+		weight: 600;
+	}
+	line-height: 5rem;
+}
+.sellingPart {
+	width: 70rem;
+	height: 30rem;
+}
+.sellingPart p {
+	font: {
+		size: 3rem;
+		weight: 200;
+	}
+	line-height: 3.6rem;
+	margin-left: 15rem;
+	margin-top: 4rem;
+	color: gray;
+	width: 40rem;
+}
+
+[class$='Process'] {
+	font: {
+		size: 2.8rem;
+	}
+	float: right;
+	margin-right: 2rem;
+	color: #ba1a0f;
+}
+
+.sellingPart > p:nth-of-type(3) > span {
+	font: {
+		size: 3.5rem;
+		line-height: 3.6rem;
+		weight: 700;
+	}
+}
+
+.sliceLine {
+	content: '';
+	width: 50rem;
+	border-bottom: 0.2rem solid gray;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+	padding-top: 3rem;
+}
+
+/*** footer ***/
+.footerButton {
+	width: 70rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8rem;
+}
+footer > article > button {
+	font: {
+		size: $footerButtonfontSize;
+		weight: 700;
+	}
+	text-align: center;
+}
+.prevButton {
+	border: 0;
+	width: 20rem;
+	height: 10rem;
+	color: #363636;
+}
+
+.nextButton {
+	border: 0;
+	font-weight: 700;
+	background-color: #cf0c00;
+	width: 50rem;
+	height: 10rem;
+	color: #fff;
+}
+
+/*** 할인 눌렀을 시 나오는 모달 ***/
+.grayWall {
+	position: absolute;
+	width: 70rem;
+	height: 90rem;
+	background-color: #101010;
+	opacity: 0.7;
+	z-index: 160;
+}
+.baseModal {
+	width: 70rem;
+	height: 90rem;
+	border: {
+		top-left-radius: 5%;
+		top-right-radius: 5%;
+	}
+	left: 0rem;
+	top: 95rem;
+	position: fixed;
+	background-color: #eee;
+	transition: all 1s cubic-bezier(0.5, 1, 0.4, 1);
+	box-shadow: 0 0 0.8rem 0.3rem gray;
+	z-index: 1000;
+}
+.onePage.baseModal-open .baseModal,
+.mainSketch.baseModal-open .baseModal,
+.mainBox.baseModal-open .baseModal {
+	top: 10%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.modalSector {
+	width: 70rem;
+	height: 100%;
+	top: 5%;
+	z-index: 150;
+	position: absolute;
+}
+
+.baseModal > ul > li:nth-of-type(2) {
+	left: 70rem;
+}
+/*** 포인트 카드 또는 바코드 스캔 ***/
+
+.barcodeImage {
+	width: 30rem;
+	height: 30rem;
+	margin: 0 auto;
+	display: block;
+}
+.baseModal > ul > li > h2 {
+	font : {
+		weight: 500;
+		size: 4rem;
+	}
+	text-align: center;
+	line-height: 5rem;
+}
+.pointInfo {
+	font: {
+		weight: 700;
+		size: 3rem;
+	}
+	text-align: center;
+	margin-top: 5rem;
+	line-height: 5rem;
+}
+// 주석으로 처리할 예정 ( 미사용 )
+
+/*** 포인트 사용 ***/
+.modalSector > h3 {
+	font: {
+		size: 2rem;
+		weight: 700;
+	}
+	text-align: center;
+	line-height: 5rem;
+}
+
+.identifyPhone {
+	text-align: center;
+	border: none;
+	background-color: transparent;
+	transform: translate(12rem, 1rem);
+	font: {
+		size: 4rem;
+		weight: 700;
+	}
+}
+
+.pointSection {
+	font: {
+		size: 2.5rem;
+		weight: 500;
+	}
+	margin: 0 auto;
+	line-height: 5rem;
+	transform: translate(15rem, -15rem);
+	span {
+		font: {
+			size: 2.5rem;
+			weight: 500;
+		}
+		color: #ba1a0f;
+		transform: translate(-30rem, -15rem);
+	}
+}
+.pointSelector {
+	position: absolute;
+	top: 20rem;
+	left: 63rem;
+	font: {
+		size: 2.5rem;
+		weight: 500;
+	}
+	color: #ba1a0f;
+	//float:right;
+}
+.totalPoint {
+	position: absolute;
+	left: 63rem;
+	//float: right;
+}
+.remainsPoint {
+	position: absolute;
+	top: 25rem;
+	left: 63rem;
+	//float: right;
+	font: {
+		size: 2.5rem;
+		weight: 500;
+	}
+	color: #ba1a0f;
+}
+.keyPad {
+	width: 55rem;
+	height: 40rem;
+	background-color: transparent;
+	left: 50%;
+	margin-left: 3rem;
+	text-align: center;
+	transform: translate(-35rem, 5rem);
+	position: relative;
+	.enterKey {
+		height: 15rem;
+		position: absolute;
+	}
+}
+.keyPad > button {
+	width: 7rem;
+	height: 7rem;
+	font: {
+		size: 3rem;
+		weight: 700;
+	}
+	border: none;
+	background-color: #fff;
+	border-radius: 10%;
+	line-height: 6.8rem;
+	margin: 0.5rem;
+	display: inline-block;
+	box-shadow: 0.2rem 0.2rem 0.5rem darkgray;
+	cursor: pointer;
+}
+.resetKey::after {
+	content: '\f00d';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 6.5rem;
+}
+
+.removeKey::before {
+	content: '\f060';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 6.5rem;
+}
+
+.plusPoint::after {
+	content: '\2b';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: absolute;
+	top: 6.2rem;
+	left: 45rem;
+	background-color: #333333;
+	border: none;
+	outline: 0;
+	color: #eee;
+}
+
+.minusPoint::before {
+	content: '\f068';
+	font-family: FontAwesome;
+	font-weight: 300;
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: absolute;
+	top: 6.2rem;
+	left: 24rem;
+	background-color: #333333;
+	border: none;
+	outline: 0;
+	color: #fff;
+}
+
+.maximumUse {
+	width: 5.5rem;
+	height: 3rem;
+	line-height: 2.8rem;
+	position: absolute;
+	top: 6rem;
+	left: 15.5rem;
+	font: {
+		size: 2.5rem;
+		weight: 400;
+	}
+	color: #fff;
+	background-color: rgb(88, 145, 3);
+	border: none;
+	border-radius: 10%;
+	cursor: pointer;
+}
+.bottomLine {
+	width: 70rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	left: 0%;
+	top: 67rem;
+	.cummulativeAction {
+		width: 30rem;
+		height: 10rem;
+		color: #101010;
+		background-color: white;
+		border: none;
+		font: {
+			size: 3rem;
+			weight: 900;
+		}
+		cursor: pointer;
+	}
+	.notCummulative {
+		width: 40rem;
+		height: 10rem;
+		color: white;
+		background-color: #cf0c00;
+		border: none;
+		font: {
+			size: 3rem;
+			weight: 900;
+		}
+		cursor: pointer;
+	}
+}
+footer > .footerButton > button {
+	cursor: pointer;
+}
+
+//카드 결제
+
+.creditCard1,
+.creditCard2,
+.completePage {
+	width: 70rem;
+	height: 80rem;
+	display: block;
+	position: relative;
+	text-align: center;
+	transition: all 1s;
+	p {
+		margin-top: -20rem;
+
+		font: {
+			size: 4rem;
+			weight: 700;
+		}
+	}
+	span {
+		font: {
+			size: 2.5rem;
+			weight: 700;
+		}
+	}
+}
+.creditCard1 {
+	left: 70rem;
+	top: 48.8rem;
+}
+.creditCard2 {
+	left: 140rem;
+	top: -27.5rem;
+}
+
+.completePage {
+	left: 210rem;
+	top: -98rem;
+	img {
+		display: block;
+		width: 55rem;
+		height: 40rem;
+		transform: translate(8rem, 15rem);
+	}
+	p {
+		transform: translate(2rem, 40rem);
+	}
+	span {
+		display: block;
+		transform: translate(2rem, 43rem);
+	}
+}
+.titlePart {
+	width: 70rem;
+	height: 10rem;
+	position: absolute;
+	left: 0rem;
+	background-color: #cf0c00;
+	text-align: center;
+	display: block;
+	margin-bottom: 5rem;
+	h2 {
+		color: #fff;
+		line-height: 9.8rem;
+		font: {
+			size: 4rem;
+			weight: 700;
+		}
+	}
+}
+.directionCard {
+	display: block;
+	transform: translate(15rem, 0rem);
+	width: 40rem;
+	height: 40rem;
+	transition: all 1s;
+	animation: directionMove 1.5s linear infinite;
+}
+.insertCard {
+	display: block;
+	transform: translate(15rem, -20rem);
+	width: 40rem;
+	height: 40rem;
+}
+.loadingCircle {
+	display: block;
+	transform: translate(30rem, 15rem);
+	width: 5rem;
+	height: 5rem;
+	margin-bottom: 35rem;
+	background-color: transparent;
+	border-radius: 50%;
+}
+.loadingCircle::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 0.5rem solid transparent;
+	border-top: 0.5rem solid rgb(180, 200, 200);
+	border-left: 0.5rem solid rgb(180, 200, 200);
+	border-radius: 50%;
+	animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes directionMove {
+	0% {
+		transform: translate(15rem, 2rem);
+	}
+	25% {
+		transform: translate(15rem, 1rem);
+	}
+	50% {
+		transform: translate(15rem, 0rem);
+	}
+	75% {
+		transform: translate(15rem, 1rem);
+	}
+	100% {
+		transform: translate(15rem, 2rem);
+	}
+}
+//포인트 100단위 미만 입력 시 뜨는 경고창
+.pointError {
+	width: 55rem;
+	height: 40rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -85%);
+	background-color: rgb(243, 243, 243);
+	text-align: center;
+	z-index: 100;
+	border-radius: 10%;
+	box-shadow: 0.5rem 0.5rem 1rem #636363;
+	p {
+		font: {
+			size: 4rem;
+			weight: 700;
+		}
+		line-height: 5rem;
+		transform: translate(0, 10rem);
+		span {
+			font: {
+				size: 4rem;
+				weight: 700;
+			}
+			color: #ba1a0f;
+		}
+	}
+	button {
+		position: absolute;
+		left: -30%;
+		top: 0rem;
+	}
+}
+
+//확인 버튼 ( 공통 )
+.applyButton {
+	width: 100%;
+	height: 10rem;
+	background-color: #cf0c00;
+	color: #fff;
+	border: 0;
+	text-align: center;
+	position: absolute;
+	top: 76rem;
+	left: 50%;
+	z-index: 300;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	font : {
+		weight: 700;
+		size: $footerButtonfontSize;
+	}
+}
+
+/*** 페이지 제어 ***/
+
+.baseModal > ul {
+	transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+}
